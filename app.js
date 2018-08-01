@@ -6,6 +6,7 @@ const _ = require('lodash');
 const notes = require("./notes.js");
 var command = process.argv[2];
 console.log('Command: ', command);
+console.log(process.argv);
 
 if (command === 'add'){
 console.log('Adding new note');
