@@ -13,10 +13,10 @@ console.log('Adding new note');
 }
 
 else if (command === 'list'){
-console.log('Listing all notes');
+console.log('Listing all notes.');
 }
 else if (command === 'read') {
-  console.log('Fetching note');
+  console.log('Reading note');
 }
 else if (command === 'remove') {
   console.log('Removing note');
