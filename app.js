@@ -18,10 +18,10 @@ else if (command === 'list'){
 notes.getAll();
 }
 else if (command === 'read') {
-  console.log('Getting note.');
+  notes.getNote(argv.title);
 }
 else if (command === 'remove') {
-  console.log('Removing note');
+notes.removeNote(argv.title);
 
 }
 else {

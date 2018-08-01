@@ -9,14 +9,14 @@ let getAll = () => {
 }
 
 let getNote = (title) => {
-  console.log("Output of "+title);
+  console.log("Getting note",title);
 }
 let removeNote = (title) => {
-  console.log("Removing "+title);
+  console.log("Removing note",title);
 }
 module.exports = {
   addNote,
   getAll,
   getNote,
-  removeNove
+  removeNote
 }
