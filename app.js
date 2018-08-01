@@ -18,7 +18,7 @@ else if (command === 'list'){
 notes.getAll();
 }
 else if (command === 'read') {
-  console.log('Reading note.');
+  console.log('Getting note.');
 }
 else if (command === 'remove') {
   console.log('Removing note');
