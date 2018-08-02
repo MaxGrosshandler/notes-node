@@ -12,7 +12,7 @@ console.log('Yargs: ',argv);
 
 if (command === 'add'){
   let note = notes.addNote(argv.title,argv.body);
-  let message =  note ? `Note created\n--\nTitle: ${note.title}\nBody: ${note.body}` : 'Note with same title already exists';
+  let message =  note ? `Note created\n--\nTitle: ${note.title}\nBody: ${note.body}` : 'Note title taken';
   console.log(message);
 
 }
@@ -21,7 +21,8 @@ else if (command === 'list'){
 notes.getAll();
 }
 else if (command === 'read') {
-  notes.getNote(argv.title);
+let note =  notes.getNote(argv.title);
+notes.logNote(note)
 }
 else if (command === 'remove') {
 let noteRemoved = notes.removeNote(argv.title);
