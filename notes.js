@@ -1,4 +1,3 @@
-console.log("Starting notes.js");
 
 
 const fs = require('fs');
@@ -35,7 +34,7 @@ return note;
 };
 
 let getAll = () => {
-  console.log('Getting all notes');
+return fetchNotes();
 }
 
 let getNote = (title) => {
@@ -52,7 +51,7 @@ let removeNote = (title) => {
 };
 
 let logNote = (note) => {
-    let message = `Note found\n--\nTitle: ${note.title}\nBody: ${note.body}`;
+    let message = `--\nTitle: ${note.title}\nBody: ${note.body}`;
     console.log(message);
 }
 module.exports = {
